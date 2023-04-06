@@ -1,26 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Introducción</h1>
-    <p>A principios de 1980 el desarrollo de redes surgió con desorden en muchos sentidos. Se produjo un enorme crecimiento en la cantidad y tamaño de las redes. A medida que las empresas tomaron conciencia de las ventajas de usar tecnologías de conexión, las redes se agregaban o expandían a casi la misma velocidad a la que se introducían las nuevas tecnologías de red.
-        Para mediados de 1980, estas empresas comenzaron a sufrir las consecuencias de la rápida expansión. De la misma forma en que las personas que no hablan un mismo idioma tienen dificultades para comunicarse, las redes que utilizaban diferentes especificaciones e implementaciones tenían dificultades para intercambiar información. El mismo problema surgía con las empresas que desarrollaban tecnologías de conexiones privadas o propietarias. “Propietario” significa que una sola empresa o un pequeño grupo de empresas controlan todo uso de la tecnología. Las tecnologías de conexión que respetaban reglas propietarias en forma estricta no podían comunicarse con tecnologías que usaban reglas propietarias diferentes.
-        Para enfrentar el problema de incompatibilidad de redes, la Organización Internacional para la Estandarización (ISO) investigó modelos de conexión como la red de Digital Equipment Corporation (DECnet), la Arquitectura de Sistemas de Red (Systems Network Architecture) y TCP/IP a fin de encontrar un conjunto de reglas aplicables de forma general a todas las redes. Con base en esta investigación, la ISO desarrolló un modelo de red que ayuda a los fabricantes a crear redes que sean compatibles con otras redes.
-        </p>
-        <h1>PROTOCOLOS </h1>
-        <p>En el intercambio de datos entre computadores, terminales y/u otros dispositivos de procesamiento, los procedimientos involucrados pueden llegar a ser bastante complejos. Considérese, por ejemplo, la transferencia de un archivo entre dos computadores. En este caso, debe haber un camino entre los dos computadores, directo o a través de una red de comunicación, pero, además normalmente se requiere la realización de las siguientes tareas adicionales:
-            1. El sistema fuente de información debe activar un camino directo de datos o bien debe proporcionar a la red de comunicación la identificación del sistema destino deseado. 
-           2. El sistema fuente debe asegurarse de que el destino está preparado para recibir datos.
-            3. La aplicación de transferencia de archivos en el origen debe asegurarse de que el programa gestor en el destino está preparado para aceptar y almacenar el archivo para el usuario determinado.
-            4. Si los formatos de los dos archivos son incompatibles en ambos sistemas, uno de los dos deberá realizar una operación de traducción.
-           Evidentemente, para que haya comunicación se necesitan dos entidades, por lo que debe existir el mismo conjunto de funciones en capas en los dos sistemas. La comunicación se consigue haciendo que las capas correspondientes, o pares, intercambien información. Las capas pares se comunican intercambiando bloques de datos que verifican una serie de reglas o convenciones denominadas protocolo. Los aspectos clave que definen o caracterizan a un protocolo son:
-            La sintaxis: establece cuestiones relacionadas con el formato de los bloques de datos. La semántica: incluye información de control para la coordinación y la gestión de errores. 
-           La temporización: considera aspectos relativos a la sintonización de velocidades y secuenciación.
-           </p>
-</body>
+    <p>
+      A principios de 1980 el desarrollo de redes surgió con desorden en muchos
+      sentidos. Se produjo un enorme crecimiento en la cantidad y tamaño de las
+      redes. A medida que las empresas tomaron conciencia de las ventajas de
+      usar tecnologías de conexión, las redes se agregaban o expandían a casi la
+      misma velocidad a la que se introducían las nuevas tecnologías de red.
+      Para mediados de 1980, estas empresas comenzaron a sufrir las
+      consecuencias de la rápida expansión. De la misma forma en que las
+      personas que no hablan un mismo idioma tienen dificultades para
+      comunicarse, las redes que utilizaban diferentes especificaciones e
+      implementaciones tenían dificultades para intercambiar información. El
+      mismo problema surgía con las empresas que desarrollaban tecnologías de
+      conexiones privadas o propietarias. “Propietario” significa que una sola
+      empresa o un pequeño grupo de empresas controlan todo uso de la
+      tecnología. Las tecnologías de conexión que respetaban reglas propietarias
+      en forma estricta no podían comunicarse con tecnologías que usaban reglas
+      propietarias diferentes. Para enfrentar el problema de incompatibilidad de
+      redes, la Organización Internacional para la Estandarización (ISO)
+      investigó modelos de conexión como la red de Digital Equipment Corporation
+      (DECnet), la Arquitectura de Sistemas de Red (Systems Network
+      Architecture) y TCP/IP a fin de encontrar un conjunto de reglas aplicables
+      de forma general a todas las redes. Con base en esta investigación, la ISO
+      desarrolló un modelo de red que ayuda a los fabricantes a crear redes que
+      sean compatibles con otras redes.
+    </p>
+    <h1>PROTOCOLOS</h1>
+    <p>
+      En el intercambio de datos entre computadores, terminales y/u otros
+      dispositivos de procesamiento, los procedimientos involucrados pueden
+      llegar a ser bastante complejos. Considérese, por ejemplo, la
+      transferencia de un archivo entre dos computadores. En este caso, debe
+      haber un camino entre los dos computadores, directo o a través de una red
+      de comunicación, pero, además normalmente se requiere la realización de
+      las siguientes tareas adicionales: 1. El sistema fuente de información
+      debe activar un camino directo de datos o bien debe proporcionar a la red
+      de comunicación la identificación del sistema destino deseado. 2. El
+      sistema fuente debe asegurarse de que el destino está preparado para
+      recibir datos. 3. La aplicación de transferencia de archivos en el origen
+      debe asegurarse de que el programa gestor en el destino está preparado
+      para aceptar y almacenar el archivo para el usuario determinado. 4. Si los
+      formatos de los dos archivos son incompatibles en ambos sistemas, uno de
+      los dos deberá realizar una operación de traducción. Evidentemente, para
+      que haya comunicación se necesitan dos entidades, por lo que debe existir
+      el mismo conjunto de funciones en capas en los dos sistemas. La
+      comunicación se consigue haciendo que las capas correspondientes, o pares,
+      intercambien información. Las capas pares se comunican intercambiando
+      bloques de datos que verifican una serie de reglas o convenciones
+      denominadas protocolo. Los aspectos clave que definen o caracterizan a un
+      protocolo son: La sintaxis: establece cuestiones relacionadas con el
+      formato de los bloques de datos. La semántica: incluye información de
+      control para la coordinación y la gestión de errores. La temporización:
+      considera aspectos relativos a la sintonización de velocidades y
+      secuenciación.
+    </p>
+    <p>
+      Definición En informática y telecomunicación, un protocolo de
+      comunicaciones es un conjunto de reglas y normas que permiten que dos o
+      más entidades de un sistema de comunicación, se comuniquen entre ellos
+      para transmitir información por medio de cualquier tipo de variación de
+      una magnitud física. Se trata de las reglas o el estándar que define la
+      sintaxis, semántica y sincronización de la comunicación, así como posibles
+      métodos de recuperación de errores. Los protocolos pueden ser
+      implementados por hardware, software, o una combinación de ambos. En el
+      caso concreto de las computadoras, un protocolo de comunicación, también
+      llamado en este caso protocolo de red, define la forma en la que los
+      distintos mensajes o tramas de bit circulan en una red de computadoras.
+    </p>
+    <h1>Modelo OSI</h1>
+    <p>
+      Cuando se desea establecer una comunicación entre computadores de
+      diferentes fabricantes, el desarrollo del software puede convertirse en
+      una pesadilla. Los distintos fabricantes pueden hacer uso de distintos
+      formatos y protocolos de intercambio de datos. Incluso dentro de una misma
+      línea de productos de un fabricante dado, los diferentes modelos pueden
+      comunicarse de forma diferente. Con la proliferación tanto de las
+      comunicaciones entre computadores como de las redes, el desarrollo de
+      software de comunicaciones de propósito específico es demasiado costoso
+      para ser aceptable. Los estándares son necesarios para promover la
+      interoperabilidad entre los equipos de distintos fabricantes, así como
+      para facilitar economías de gran escala. Debido a la complejidad que
+      implican las comunicaciones, un solo estándar no es suficiente. En su
+      lugar, las distintas funcionalidades deberían dividirse en partes más
+      manejables, estructurándose en una arquitectura de comunicaciones. La
+      arquitectura constituirá, por tanto, el marco de trabajo para el proceso
+      de normalización. Esta línea argumental condujo a la Organización
+      Internacional de Estandarización (ISO, Internacional Organization for
+      Standarization) en 1977 a establecer un subcomité para el desarrollo de
+      tal arquitectura. El resultado fue el modelo de referencia OSI. Aunque los
+      elementos esenciales del modelo se definieron rápidamente, la norma ISO
+      final, ISO 7498, no fue publicada hasta 1984.
+    </p>
+    <p>
+      Cuando se desea establecer una comunicación entre computadores de
+      diferentes fabricantes, el desarrollo del software puede convertirse en
+      una pesadilla. Los distintos fabricantes pueden hacer uso de distintos
+      formatos y protocolos de intercambio de datos. Incluso dentro de una misma
+      línea de productos de un fabricante dado, los diferentes modelos pueden
+      comunicarse de forma diferente. Con la proliferación tanto de las
+      comunicaciones entre computadores como de las redes, el desarrollo de
+      software de comunicaciones de propósito específico es demasiado costoso
+      para ser aceptable. Los estándares son necesarios para promover la
+      interoperabilidad entre los equipos de distintos fabricantes, así como
+      para facilitar economías de gran escala. Debido a la complejidad que
+      implican las comunicaciones, un solo estándar no es suficiente. En su
+      lugar, las distintas funcionalidades deberían dividirse en partes más
+      manejables, estructurándose en una arquitectura de comunicaciones. La
+      arquitectura constituirá, por tanto, el marco de trabajo para el proceso
+      de normalización. Esta línea argumental condujo a la Organización
+      Internacional de Estandarización (ISO, Internacional Organization for
+      Standarization) en 1977 a establecer un subcomité para el desarrollo de
+      tal arquitectura. El resultado fue el modelo de referencia OSI. Aunque los
+      elementos esenciales del modelo se definieron rápidamente, la norma ISO
+      final, ISO 7498, no fue publicada hasta 1984.
+    </p>
+    <h1>Las capas</h1>
+    <h1>Capa física</h1>
+    <p>
+      El nivel físico se encarga de las tareas de transmisión física de las
+      señales eléctricas (o electromagnéticas) entre los diferentes sistemas.
+      Las limitaciones del nivel físico (equipos de transmisión y recepción,
+      medios de transmisión, amplificadores, etc.) imponen otras al resto del
+      sistema: por un lado, limitan la velocidad de transmisión (en bits por
+      segundo) y, por otro, hacen aparecer una probabilidad de error, el
+      porcentaje de bits erróneos que llegan a destino. La primera limitación es
+      casi insalvable partiendo de un medio de transmisión dado, puesto que los
+      parámetros físicos de este último imponen un límite superior no superable
+      por medio de una mejora tecnológica. Los medios de transmisión poseen una
+      capacidad de transmisión acotada y la electrónica que utilizamos para
+      llevar a cabo las transmisiones puede mejorar la velocidad de transmisión,
+      pero no superar este límite. Esta limitación viene dada por el ancho de
+      banda, o anchura del espectro eléctrico, que puede atravesar el medio de
+      transmisión (doblar el ancho de banda significa que se puede doblar la
+      velocidad de transmisión) y por la imposibilidad práctica de recibir la
+      señal libre de cualquier interferencia.
+    </p>
+    <p>
+      Nota En el nivel físico somos incapaces de corregir errores. Asumimos una
+      probabilidad de error y encargamos al nivel superior su corrección.
+    </p>
+    <h1>Capa de Enlace de datos</h1>
+    <p>
+      El nivel de enlace es el primero de la torre OSI que se basa en software,
+      algoritmos y protocolos. Su misión principal es dar fiabilidad a la
+      transmisión de las señales eléctricas o electromagnéticas que proporciona
+      el nivel físico, lo que se puede conseguir si las cotas de error son
+      inferiores al 1%. Se añaden bits adicionales a los que forman el mensaje
+      para poder detectar errores de transmisión y pedir su retransmisión. Para
+      ello, es preciso conferir una estructura a los bits: se agrupan en
+      pequeños bloques denominados tramas, que contienen los bits de mensaje,
+      los bits añadidos para detectar errores y diferentes campos de control,
+      tales como el número de trama. El transmisor calcula estos bits
+      adicionales a partir del resto por medio de una operación que el receptor
+      conoce y aplica igualmente. Si receptor detecta una discrepancia entre los
+      bits adicionales (redundantes) y los que ha calculado a partir del resto,
+      detecta que el bloque es erróneo y pedirá su retransmisión. Además del
+      control de errores, el nivel de enlace lleva a cabo otra tarea importante:
+      el control de flujo. El receptor debe procesar las tramas a medida que las
+      recibe. En algunos casos, este proceso comporta un gasto de tiempo mínimo,
+      teniendo en cuenta la velocidad de transmisión (por ejemplo, guardar los
+      datos en disco); sin embargo, puede haber casos en que este proceso sea
+      costoso. En esta situación, el receptor necesita un mecanismo que
+      notifique al transmisor que debe detener momentáneamente la transmisión
+      con el objetivo de disponer del tiempo necesario para llevar a cabo esta
+      tarea. El nivel de enlace no sólo sirve para controlar líneas punto a
+      punto, sino también para controlar líneas compartidas por diferentes
+      terminales (redes de área local).
+    </p>
+    <p>
+      Nota El hecho de que las tramas sean pequeños bloques de bits minimiza la
+      probabilidad de que haya muchos bits erróneos dentro de los bloques.
+    </p>
+    <h1>Capa de Red</h1>
+    <p>
+      El nivel de red es el que permite que pueda haber más de dos máquinas
+      involucradas en las interconexiones. Si sólo se tuviese el nivel de
+      enlace, esto no sería posible. El nivel de enlace se ocupa de que los bits
+      lleguen de un lado a otro, por lo tanto, sólo permite interconectar dos
+      máquinas. Para poder interconectar más de dos máquinas, necesitamos
+      identificarlas y conectarlas de alguna manera. Ésta es la tarea del nivel
+      de red. Ya hemos visto que las redes de conmutación de paquetes
+      constituyen el tipo de red más eficiente para transmitir datos desde
+      diferentes puntos de vista: uso de recursos, coste, capacidad de mantener
+      distintas conexiones simultáneas, etc. El modelo OSI, por tanto, sólo
+      habla de redes de conmutación de paquetes. En el nivel de red se distingue
+      entre estaciones terminales y nodos de conmutación: Los nodos de
+      conmutación disponen de diferentes enlaces hacia otros nodos o hacia
+      terminales, y son los que permiten que los paquetes viajen por la red
+      desde una estación terminal a otra. Existen dos tipos de redes de
+      conmutación de paquetes: • Redes que funcionan en modo datagrama.
+      Podríamos decir que este tipo de redes son las básicas, puesto que
+      incorporan la funcionalidad mínima para que un grupo de nodos y de
+      terminales interconectados puedan hacer pasar información de un punto a
+      otro. El problema de las redes en modo datagrama radica en la dificultad
+      de garantizar la entrega correcta y completa de la información, puesto que
+      los diferentes paquetes que forman la transmisión no mantienen un vínculo
+      conocido por la red. Los paquetes pueden llegar fuera de orden,
+      duplicados, o incluso se pueden perder sin que la red pueda hacer gran
+      cosa al respecto. Se deja al terminal receptor la responsabilidad de
+      restaurar los posibles daños que haya tenido el paquete durante la
+      transmisión. • Redes que funcionan en modo circuito virtual. Estas redes
+      pueden garantizar que la entrega de los paquetes sea correcta y completa,
+      y lo hacen aportando el concepto de conexión propio de las redes de
+      conmutación de circuitos. Es el circuito virtual. Este último permite
+      agrupar los paquetes relacionados de manera que el receptor los recibe
+      correctamente sin problemas de orden, duplicación o pérdida. La asignación
+      de direcciones es uno de los conceptos básicos del nivel de red. Le
+      permite, como sistema distribuido pero único, decidir cuál de los
+      múltiples terminales es el destinatario final de cada paquete. El
+      direccionamiento constituye el procedimiento que permite a este sistema
+      distribuido conducir la información por los diferentes nodos de origen a
+      destino, minimizando el trayecto y el tiempo de tránsito, optimizando
+      recursos, etc.
+    </p>
+    <h1>Capa de Transporte</h1>
+    <p>
+      El nivel de transporte permite una conexión fiable sobre cualquier tipo de
+      red (fiable o no). En las redes de conmutación de paquetes en modo
+      datagrama es donde este nivel revela su importancia, puesto que es el
+      responsable de controlar las posibles deficiencias de las transmisiones.
+      La función principal de este nivel consiste en asegurar la calidad de
+      transmisión entre los terminales que utilizan la red, lo que implica
+      recuperar errores, ordenar correctamente la información, ajustar la
+      velocidad de transmisión de la información (control de flujo), etc
+    </p>
+    <h1>Capa sesión, presentación y aplicación.</h1>
+    <p>
+      Estos tres niveles se suelen explicar de manera conjunta, puesto que
+      existen pocos ejemplos prácticos de protocolos de sesión y de
+      presentación. Además, la arquitectura Internet delega todos los trabajos
+      por encima de transporte a la aplicación. No obstante, en el modelo OSI
+      están definidos como tres niveles diferentes e independientes, con
+      atribuciones propias. El nivel de sesión es, en teoría, el encargado de
+      gestionar las conexiones de larga duración, la recuperación de caídas de
+      red de manera transparente y los protocolos de sincronía entre
+      aplicaciones. El nivel de presentación se encarga de conseguir que las
+      diferentes plataformas (sistemas operativos, procesadores, etc.) se puedan
+      entender al conectarse por medio de una misma red. Dicho de otra manera,
+      soluciona el problema de la heterogeneidad definiendo una manera universal
+      de codificar la información. Dicha codificación puede tener propiedades de
+      eficiencia (por medio de la compresión, por ejemplo), propiedades de
+      confidencialidad (por medio de la criptografía), etc. En el nivel de
+      aplicación residen los programas. En este nivel podemos encontrar
+      servidores, clientes que acceden a estos últimos, aplicaciones que
+      trabajan según un modelo simétrico (peer-to-peer), etc.
+    </p>
+    <h1>Arquitectura TCP/IP</h1>
+    <p>
+      El departamento de defensa de USA definió un conjunto de reglas que
+      establecieron cómo conectar computadoras entre sí para lograr el
+      intercambio de información, soportando incluso desastres mayores en la
+      subred. Fue así como se definió el conjunto de protocolos de TCP/IP. Para
+      los años 80 una gran cantidad de instituciones estaban interesados en
+      conectarse a esta red que se expandió por todo EE.UU. El modelo TCP/IP
+      consta solamente de 4 capas.
+    </p>
+    <p>
+      Capa Host a Red. La capa inferior, se relaciona con la capa física
+      respecto del modelo OSI, y contiene varios estándares del IEEE como el
+      802.3 llamado Ethernet que establece las reglas para enviar datos por
+      cable coaxial delgado (10Base2), cable coaxial grueso (10Base5), par
+      trenzado (10Base-T), fibra óptica (10Base-F) y su propio método de acceso
+      al medio físico. El 802.4 llamado Token Bus que puede usar estos mismos
+      medios, pero con un método de acceso diferente y otros estándares
+      denominados genéricamente como 802.X. Capa de Red. Esta capa cumple, junto
+      con la anterior, los niveles 1, 2 y 3 del modelo OSI. En este nivel se
+      definió el protocolo IP cuya responsabilidad es entregar paquetes en los
+      destinos indicados, realizando las operaciones apropiadas de ruteo y la
+      solución de problemas como congestión o caídas de enlaces. Capa de
+      Transporte. Está formada por dos protocolos: TCP y UDP. El primero es un
+      protocolo confiable y orientado a conexión, lo que significa que ofrece un
+      medio libre de errores para enviar paquetes. El segundo es un protocolo no
+      orientado a conexión y no es confiable. Capa de Aplicación. En la ´ultima
+      capa se encuentran decenas de aplicaciones ampliamente conocidas
+      actualmente. Las más populares son los protocolos WWW, FTP, telnet, DNS,
+      el servicio de correo electrónico (SMTP), etc.
+    </p>
+  </body>
 </html>
